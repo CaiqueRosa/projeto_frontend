@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* #58af9c
+#e2e2e2
+#7bb6ec */
+white
+html{
+    /* a cada 1rem será considerado 10px... 1rem é 10px (neste caso) OBS: 100% seria 16px*/
+    font-size: 62.5%;
+}
+
+input{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:50%;
+    height:100vh;
+    background-color: #58af9c;
+}
+.info img{
+    max-width:600px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:50%;
+    height:100vh;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #fff;
+    gap: 20px;  
+}   
+.login-form > input {
+    width:70%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size:1.6rem;
+    outline: none;
+
+}
+.login-form > button {
+    padding: 5px;
+    width:25%;
+    border: 0px;
+    border-radius:5px;
+    font-size:1.3rem;
+    background-color: #58af9c;
+    color: #ffff;
+    font-weight:bold;
+    cursor:pointer
+}
+.login-form > button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+.title-form{
+    font-size:1.6rem;
+    color: black;
+}
