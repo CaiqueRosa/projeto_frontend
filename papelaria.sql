@@ -37,7 +37,8 @@ CREATE TABLE Usuario(
   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   nome varchar(140) NOT NULL,
   email varchar(140) NOT NULL,
-  senha varchar(16) NOT NULL
+  senha varchar(16) NOT NULL,
+  UNIQUE KEY uk_usuario_nome_email(nome, email)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Cria usuario para teste
