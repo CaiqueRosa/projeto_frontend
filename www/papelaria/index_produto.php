@@ -9,7 +9,7 @@
 <body>
 
 
-    <form action="cadastrar_produto.php" method="POST" >
+    <form action="cadastro_produto.php" method="POST" >
         <label>Nome produto</label>
         <input type="text" name="nomeproduto"><br>
 
