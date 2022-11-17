@@ -16,8 +16,10 @@ html{
 input{
     display: block;
 }
-a{
-    text-decoration: none;
+
+.cadastrar-link {
+    text-decoration: underline;
+    cursor: pointer;
     color: black;
 }
 

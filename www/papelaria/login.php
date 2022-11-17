@@ -43,7 +43,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>LOGIN</title>
 </head>
@@ -73,6 +73,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
                 }
                 ?>  
             </p>
+
+            <strong>Ainda não possui uma conta? <a class="cadastrar-link" href="cadastro_usuario.php">Cadastrar-se aqui</a></strong>
 
             <button type="submit" name="enviar" value="Envia" id="btn-form">Entrar</button>
             

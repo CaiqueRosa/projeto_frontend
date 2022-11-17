@@ -20,7 +20,7 @@ include('protect.php');
     <div>
     <a href="logout.php">Sair</a>
 
-    <a href="index_product.php">Cadastrar Produto</a>
+    <a href="index_produto.php">Cadastrar Produto</a>
     </div>
 </body>
 </html>
