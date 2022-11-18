@@ -44,3 +44,12 @@ CREATE TABLE Usuario(
 -- Cria usuario para teste
 INSERT INTO Usuario(nome, email, senha) VALUES
 ('Cleiton', 'cleiton@teste.com', '1234');
+
+ALTER TABLE Produto
+ADD COLUMN obs VARCHAR(255) NOT NULL,
+ADD COLUMN familia_de_itens VARCHAR(255) NOT NULL,
+ADD COLUMN unidade_medida VARCHAR(255) NOT NULL,
+ADD COLUMN situacao_do_item VARCHAR(255) NOT NULL,
+ADD COLUMN data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN data_liberacao DATE DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN descricao_item VARCHAR(255) NOT NULL;
