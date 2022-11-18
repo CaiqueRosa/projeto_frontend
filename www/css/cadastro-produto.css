@@ -1,0 +1,23 @@
+/**{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}*/
+
+/* #58af9c
+#e2e2e2
+#7bb6ec 
+input{
+    display: block;
+}*/
+
+.container{
+}
+
+.wrapper{
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #58af9c;
+}
