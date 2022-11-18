@@ -1,23 +1,13 @@
-/**{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}*/
+.navigation-buttons {
+    margin-top: 15px;
+    margin-left: 15px;
+}
 
-/* #58af9c
-#e2e2e2
-#7bb6ec 
-input{
-    display: block;
-}*/
-
-.container{
+.go-back-button{
+    margin-left: 30px;
 }
 
 .wrapper{
     padding: 20px;
-    width: 100vw;
-    height: 100vh;
     background-color: #58af9c;
 }
