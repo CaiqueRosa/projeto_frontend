@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="form-group col-md-12">
-                            <label>Descrição do Item:</label>
+                            <label>Descrição do Item</label>
                             <textarea name="descricao_item" class="form-control input-append date" rows="3"></textarea><br>
                         </div>
                         
@@ -44,20 +44,36 @@
                                     <input type="text" name="estoque" class="form-control"><br>
                                 </div>
                             </div>
-
                         </section>
 
                         <section class="form-row">
                             <div class="col">
                                 <div class="form-group col">
-                                    <label>Código:</label>
+                                    <label>Observação</label>
+                                    <input type="text" name="obs" class="form-control"><br>
+                                </div>
+                            </div>
+
+                             <!--data_criacao nao sera informada pelo usuário, esse campo no bd sempre é salvo com a data de agora-->
+                            <div class="col">
+                                <div class="form-group col">
+                                    <label>Data de Liberação</label>
+                                    <input type="date" name="data_liberacao" class="form-control input-append date"><br>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="form-row">
+                            <div class="col">
+                                <div class="form-group col">
+                                    <label>Código</label>
                                     <input type="number" name="codigo" class="form-control"><br>
                                 </div>
                             </div>
 
                             <div class="col">                        
                                 <div class="form-group col">
-                                    <label>Familia de Itens:</label>
+                                    <label>Familia de Itens</label>
 
                                     <select type="select" name="familia_de_itens" class="form-control">
                                         <option disabled selected value="none"> -- Selecione uma opção -- </option>
@@ -72,7 +88,7 @@
                         <section class="form-row">
                             <div class="col">
                                 <div class="form-group col">
-                                    <label>Unidade de Medida:</label>
+                                    <label>Unidade de Medida</label>
 
                                     <select type="select" name="unidade_medida" class="form-control">
                                         <option disabled selected value="none"> -- Selecione uma opção -- </option>
@@ -87,7 +103,7 @@
                             </div>
                             <div class="col">
                                 <div class="form-group col">
-                                    <label>Unidade de Medida:</label>
+                                    <label>Situação do Item</label>
 
                                     <select type="select" name="situacao_do_item" class="form-control">
                                         <option disabled selected value="none"> -- Selecione uma opção -- </option>
@@ -98,19 +114,10 @@
                             </div>
                         </section>
 
-                        <!--ADD COLUMN data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,-->
-                        <section class="form-row">
-                            <div class="col">
-                                <div class="form-group col">
-                                    <label>Data de Liberação:</label>
-                                    <input type="date" name="data_liberacao" class="form-control input-append date"><br>
-                                </div>
-                            </div>
-                        </section>
-                    
-                        <button type="submit" name="enviar" class="btn btn-primary">Cadastrar</button>
-                        <a href="index.php">Voltar</a>
-                        
+                        <div class="navigation-buttons">
+                            <button type="submit" name="enviar" class="btn btn-primary">Cadastrar</button>
+                            <a class="go-back-button" href="index.php">Voltar</a>
+                        </div>
                     </form>
                 </div>
             </div>
