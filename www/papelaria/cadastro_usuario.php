@@ -88,36 +88,42 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar-se</title>
-
+    <link rel="stylesheet" href="../css/user_registration.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <h2>Cadastrar-se</h2>
-        <p>Preencha os campos para criar sua conta.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <div class="container mx-auto h-auto">
+        <div class="c-header-info">
+            <img src="../img/newUser.webp" alt="user" width="200px">
             <div>
-                <label>Nome</label>
-                <input type="text" name="nome" class="form-control <?php echo (!empty($name_error)) ? 'is-invalid' : ''; ?>" value="<?php echo $nome; ?>">
+                <h2 class="text-center title">Cadastrar-se</h2>
+                <p class="text-center subTitle">Preencha os campos para criar sua conta.</p>
+            </div>
+        </div>
+        <form class="w-80 mx-auto form-container" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="input-form">
+                <input placeholder="Digite seu nome" type="text" name="nome" class="form-control" <?php echo (!empty($name_error)) ? 'is-invalid' : ''; ?>" value="<?php echo $nome; ?>">
                 <span class="invalid-feedback"><?php echo $name_error; ?></span>
             </div>
            
-            <div>
-                <label>E-mail</label>
-                <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+            <div class="input-form">
+                <input type="text" placeholder="exemplo@exemplo.com.br" name="email" class="form-control" <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
                 <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div>  
               
-            <div>
-                <label>Senha</label>
-                <input type="senha" name="senha" class="form-control <?php echo (!empty($senha_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $senha; ?>">
+            <div class="input-form">
+                <input type="senha" placeholder="Senha" name="senha" class="form-control" <?php echo (!empty($senha_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $senha; ?>">
                 <span class="invalid-feedback"><?php echo $senha_err; ?></span>
             </div>
 
-            <div>
-                <input type="submit" class="btn btn-primary" value="Cadastrar">
+            <div class="c-btn ">
+                <input type="submit" class="btn btn-primary button" value="Cadastrar">
             </div>
-            <p>Já possui uma conta? <a href="login.php">Entre aqui</a>.</p>
+            <p class="title-account">Já possui uma conta? <a href="login.php">Entre aqui</a>.</p>
         </form>
     </div>    
+    </div>
 </body>
 </html>

@@ -1,0 +1,59 @@
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: #58af9c;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.title{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.subTitle{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+.form-container{
+    max-width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 10px;
+}
+.c-btn{
+    display: flex;
+    justify-content:center;
+}
+.button{
+    margin: 10px auto;
+    width: 200px;
+}
+.title-account{
+    text-align: center;
+}
+.input-form > input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #ffff;
+}
+.container{
+    padding: 25px;
+    box-shadow: 0px 2px 12px 5px #FAE3E3;
+    width:650px !important;
+    border-radius:7px;
+}
+.c-header-info{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom:20px;
+}
