@@ -51,8 +51,9 @@ include('protect.php');
             <p>Você pode começar a cadastrar seus produtos clicando em <strong>Cadastrar Produto</strong></p>
                 
             <div style="padding-top: 2rem;">
-                <a style="text-decoration: underline" href="logout.php">Sair</a> |
-                <a style="text-decoration: underline" href="index_produto.php">Cadastrar Produto</a>
+                <a style="text-decoration: underline" href="index_produto.php">Cadastrar Produto</a> |
+                <a style="text-decoration: underline" href="">Listar Produtos</a> |
+                <a style="text-decoration: underline" href="logout.php">Sair</a> 
             </div>
 
             <p style="padding-top: 2rem;">Qualquer dúvida ou feedback entre em contato conosco pelo e-mail <code>papelaria@contato.com.br</code></p>
