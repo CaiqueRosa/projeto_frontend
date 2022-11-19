@@ -1,8 +1,10 @@
+.container {
+    background-color: #1b957a90;
+}
 
 .wrapper{
     width: 100vw;
     height: 100vh;
-    background: #58af9c;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -38,6 +40,7 @@
 }
 .title-account{
     text-align: center;
+    color: white;
 }
 .input-form > input{
     outline: none;
@@ -47,7 +50,7 @@
 }
 .container{
     padding: 25px;
-    box-shadow: 0px 2px 12px 5px #FAE3E3;
+    box-shadow: 0px 2px 12px 5px #c9c9c9;
     width:650px !important;
     border-radius:7px;
 }
@@ -56,4 +59,8 @@
     justify-content:space-around;
     align-items: center;
     margin-bottom:20px;
+}
+
+.register-invalid-feedback {
+    color: rgb(221, 75, 75);
 }
