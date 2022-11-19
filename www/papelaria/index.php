@@ -47,13 +47,15 @@ include('protect.php');
         <main role="main" class="container">
             <h3 class="mt-5">Boas vindas, <?php echo $_SESSION['nome']; ?> !!</h3>
             
-            <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-            <p>Back to <a href="../sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+            <p class="lead">Nossa plataforma visa te oferecer a melhor experiencia possível para o cadastro de seus produtos.</p>
+            <p>Você pode começar a cadastrar seus produtos clicando em <strong>Cadastrar Produto</strong></p>
                 
-            <div style="padding-top: 3rem;">
+            <div style="padding-top: 2rem;">
                 <a style="text-decoration: underline" href="logout.php">Sair</a> |
                 <a style="text-decoration: underline" href="index_produto.php">Cadastrar Produto</a>
             </div>
+
+            <p style="padding-top: 2rem;">Qualquer dúvida ou feedback entre em contato conosco pelo e-mail <code>papelaria@contato.com.br</code></p>
         </main>
 
     </body>
