@@ -26,19 +26,19 @@ include('protect.php');
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link">Link</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-link disabled">Disabled</a>
                         </li>
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-info my-2 my-sm-0 submit-button" type="submit" onclick="showAlert()">Search</button>
                     </form>
                 </div>
             </nav>
@@ -47,7 +47,7 @@ include('protect.php');
         <main role="main" class="container">
             <h3 class="mt-5">Boas vindas, <?php echo $_SESSION['nome']; ?> !!</h3>
             
-            <p class="lead">Nossa plataforma visa te oferecer a melhor experiencia possível para o cadastro de seus produtos.</p>
+            <p class="lead">Nossa plataforma visa te oferecer a melhor experiência possível para o cadastro de seus produtos.</p>
             <p>Você pode começar a cadastrar seus produtos clicando em <strong>Cadastrar Produto</strong></p>
                 
             <div style="padding-top: 2rem;">
@@ -60,4 +60,9 @@ include('protect.php');
         </main>
 
     </body>
+    <script>
+        function showAlert() {
+            alert("Oppss!! Não encontramos o que você estava buscando.");
+        }
+    </script>
 </html>
