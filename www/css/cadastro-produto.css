@@ -10,4 +10,11 @@
 .wrapper{
     padding: 20px;
     background-color: #daf0f3;
+    position: relative;
+}
+
+.form-produto{
+    border-color:#58af9c !important;
+    margin-top: 90px; 
+    margin-bottom: 90px;
 }
