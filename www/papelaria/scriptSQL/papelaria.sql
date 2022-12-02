@@ -22,6 +22,7 @@ SET time_zone = "+00:00";
 
 -- cria o db papelaria
 CREATE DATABASE papelaria;
+USE papelaria;
 
 -- Cria a tabela de Produto
 CREATE TABLE Produto(

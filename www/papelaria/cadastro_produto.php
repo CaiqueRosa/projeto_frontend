@@ -16,6 +16,10 @@
     VALUES('".$nome."' , '".$preco."', '".$estoque."', '".$codigo."', '".$obs."', '".$familia_de_itens."', 
     '".$unidade_medida."', '".$situacao_do_item."', '".$data_liberacao."', '".$descricao_item."');"; 
 
-    mysqli_query($strcon, $sql) or die ('Erro ao tentar cadastrar registro'); 
-    echo "Produto cadastrado com sucesso"; // mudar aqui para redirecionar para tela de listagem dos produtos
- ?>
+    mysqli_query($strcon, $sql) or die ('Erro ao tentar cadastrar registro');
+
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+        window.alert('PRODUTO CADASTRADO COM SUCESSO!')
+        window.location.href='index.php';
+    </SCRIPT>");
+?>

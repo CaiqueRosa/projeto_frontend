@@ -40,11 +40,11 @@ include('protect.php');
                         <h2>Listar Produtos</h2>
                         <img src="..\img\checklist.png" style="height: 100px">
                         <p>Você também pode ver a lista completa dos produtos clicando no botão abaixo!</p>
-                        <a class="btn btn-primary" href="" role="button">Listar Produtos</a>
+                        <a class="btn btn-primary" href="listagem.php" role="button">Listar Produtos</a>
                     </div>
                 </div>
             </div>
-        </main>
+        </main><br><br><br>
         <?php
             include "./footer.component.php";
             echo createFooter();

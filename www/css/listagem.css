@@ -1,0 +1,25 @@
+table{
+    margin:auto;
+    margin-top:8em;
+    border-radius: 0.2em;
+    padding: 1em;
+    text-align: center;
+}
+td{
+    border-right: solid 0.1em white;
+    padding: 0.5em;
+}
+.ultimo{
+    border-right: hidden;
+}
+#cabecalho{
+    border-bottom: solid 0.1em white;
+    background-color: #6bbbaa;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr{
+    background-color: #daf0f3;
+}
